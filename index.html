@@ -1,0 +1,127 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Module 4 Project</title>
+      <style>
+        body {
+          background-color: black;
+          color: white;
+          text-align: center;
+          border-radius: 20px;
+          border-style: double groove;
+          border-width: 10px;
+          border-color: white;
+          padding: 15px;
+          
+        }
+         img {
+          width: 30%;
+          height: 30%;
+          border-radius: 20px;
+          border-style: double groove;
+          border-width: 10px;
+          border-color: white;
+        }
+        .caption {
+          text-align: center;
+          margin: 0 auto;
+          bottom: 0;
+          left: 0;
+          width: 50%;
+          color: white;
+          
+        }
+        .HomePage {
+          color: white;
+          text-align: center;
+          
+        }
+        .contactform {
+          border-radius: 20px;
+          padding: 15px;
+          border-style: double groove;
+          border-radius: 20px;
+          border-width: 10px;
+          border-color: white;
+        }
+      </style>
+    </head>
+    <body>
+      <header>Linus Torvalds Bio:</header>
+      <nav>
+        <li><a href="#HomePage">Overview</a></li>
+        <li><a href="#contactform">Contact Form</a></li>
+      </nav>
+      <div class="HomePage" id="HomePage">
+        <b>Overview</b>
+        <aside>
+          <img src="https://cdn.arstechnica.net/wp-content/uploads/2015/08/LinuxCon_Europe_Linus_Torvalds_05.jpg">
+          <div class="caption" id="caption"><p>Photo of Linus Torvalds</p></div>
+        </aside>
+        <section>
+          <p>Linus Torvalds is a software engineer from Finland who developed the Linux kernel, 
+            which is a well-known operating system that powers most of the internet. In fact, most websites are hosted on Linux servers, 
+            and it's also used for desktop use, but it's most likely not that well known for that. 
+            Linus Torvalds started working on the Linux kernel in 1991 as a side project while in college. 
+            At first, it wasn't that much until Linus made the project open-sourced, 
+            which allowed the same people who used the operating system to work on it and add features to it that they saw fit for their needs or wants. 
+            This made it so Linux has many different versions called distros,
+            which are all based on what Linus worked on plus whatever they decide to add to the version of Linux. 
+            With that being said, I think Linus is my favorite programmer and software developer in general, 
+            and he quite motivates me to work on my own software ideas.</p>
+        </section>
+        
+      </div>
+      
+      <div class="contactform" id="contactform">
+        <footer>
+          <b>Contact Form:</b>
+          <form action="">
+            <label> email:
+              <input type="email" placeholder="type email">
+            </label>
+            <label> message:
+              <input type="message" placeholder="type message">
+            </label>
+            <input type="submit">
+          </form>
+        </footer>
+      </div>
+    </body>
+    </html>
